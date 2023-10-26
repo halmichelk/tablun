@@ -1,0 +1,1384 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es" translate="no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>TABLUN</title>
+	<link id="page_favicon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAARNJREFUOE9VUwkOwzAIg/8/msoXpNNULRkYY7vdVVNVNY1ndY3OPHb3zNztc8kildQMu3HVwGOHPoLt6gGuZ7BGAK0OV7uyB1cvA6P+Rqang86OWQohA4bg5LW4Yehi/jWgEAD8Lvy0T6Zs3g9rQBgf46GIBnoMhqDcFzzcQyIK4BHfHNErEVcU6szr0TJZYU24wWcu/5Qz+mkIcHkAvCuh6YOI2iRLs96dljFe4Nk4Isb61ZaWqMeEPMIBJLk3F4wZwM+FlTW+O62bvCgn8QBoHZPv/xCvIFiU0MV4KEYE2G206PJcDSiyUrRSgIEZ64WLUr8gRWuq4gg4i9Zp38a7fpPmib8gSTslxuaTi14Kr6A9P+Ahywp1qRyaAAAAAElFTkSuQmCC" rel="icon" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+
+		html{
+			touch-action: manipulation;
+			-webkit-text-size-adjust: 100%;
+			}
+
+		input[type="text"]{ caret-color: #a4a4c3 }
+		input:focus::placeholder{ color: transparent !important }
+
+		::selection{
+					background: grey;
+					color: #fff
+					}
+		::-moz-selection{
+						background: grey;
+						color: #fff
+						}
+		::-moz-focus-inner{ border: 0 }
+
+
+		::-webkit-scrollbar{
+							width: 10px;
+							background: transparent
+							}
+
+		::-webkit-scrollbar-track{ background: transparent }
+		::-webkit-scrollbar-thumb{
+								background: #000;
+								border-top: 0 !important;
+								border-bottom: 0 !important;
+								border-left: 10px solid black;
+								}
+
+
+	  *{
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+		font-family: 'Oswald', sans-serif;
+		}
+
+		body{
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+			padding: 0 10px;
+			}
+			@media( min-width: 360px ){ body{ padding: 0 20px } }
+			@media( min-width: 400px ){ body{ padding: 0 40px } }
+
+			#bar{
+				margin: 0 auto;
+				padding-top: 30px;
+				width: 100%;
+				max-width: 1200px;
+				height: 200px;
+				}
+
+				#header{
+						width: 303px;
+						height: 200px;
+						}
+
+						#header_4t{
+									position: absolute;
+									font-size: 22px;
+									font-family: 'Oswald', sans-serif;
+									line-height: 26px;
+									width: 64px;
+									text-align: center;
+									padding: 8px 0;
+									}
+
+						.logo_4t {
+								position: absolute;
+								width: 64px;
+								height: 64px;
+								margin-top: 68px;
+								}
+								.logo_4t div{
+											float: left;
+											width: 18.75%;
+											height: 100%;
+											background: #000;
+											}
+											.logo_4t_2,
+											.logo_4t_4{ margin-left: 6.25% }
+											.logo_4t_3{ margin-left: 12.5% }
+
+						#tablun{
+								position: absolute;
+								font-size: 80px;
+								font-family: 'Oswald', sans-serif;
+								margin: 38px 0 0 80px
+								}
+
+
+						#menu{
+							position: absolute;
+							text-transform: uppercase;
+							word-spacing: 25px;
+							text-align: right;
+							top: 180px;
+							}
+							#menu > *{
+									font-family: 'Oswald', sans-serif;
+									font-size: 18px
+									}
+
+
+							#menu .active{
+										background: grey;
+										color: #fff;
+										box-shadow: 0 0 0 4px grey;
+										}
+
+
+			#lema{
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+				}
+
+
+			#grid{
+				display: grid;
+				grid-gap: 10px 30px;
+				grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+				grid-auto-rows: 20px;
+				max-width: 1200px;
+				margin: 100px auto 200px auto;
+				}
+
+
+.item {
+  background-color: #ffffff;
+}
+
+.photothumb{
+  width: 100%;
+}
+
+.title {
+  padding: 20px 0 10px 0px
+ }
+
+.title h3{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/*.project .title{
+  background-color: #607D8B;
+}
+
+.blog .title{
+  background-color: #ff9800;
+}
+
+.obra .title{
+  background-color: #f44336;
+}
+*/
+
+.desc{
+  padding: 10px 0 5px 0;
+}
+
+.desc img{
+  width: 50%;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.desc p{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+
+		<div id="bar">
+					<div id="header">
+									<center id="header_4t">CUATRO<br>TABLAS</center>
+									<div class="logo_4t">
+														<div class="logo_4t_1"></div>
+														<div class="logo_4t_2"></div>
+														<div class="logo_4t_3"></div>
+														<div class="logo_4t_4"></div>
+														</div>
+
+										<div id="tablun">TABLUN</div>
+						<div id="menu">
+										<span>autores</span>
+										<span>obras</span>
+										<span>eventos</span>
+										<span>opinión</span>
+										</div>
+										</div>
+										</div>
+
+
+	<p id="lema">
+	La Red Social de los Autores que Nadie Lee.
+	<br>
+	Cuatro-Tablas &copy; 2023.
+	</p>
+
+
+<div id="grid">
+			
+
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+    <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+    </div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="title">
+        <h3>opinión</h3>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog10.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+      </div>
+    </div>
+  </div>
+  <div class="item obra">
+    <div class="content">
+      <div class="title">
+        <h3>obra</h3>
+      </div>
+      <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, conse</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+    </div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="title">
+        <h3>evento</h3>
+      </div>
+      <div class="desc">
+        <img src="https://assets.codepen.io/881020/dog4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+    </div>
+  </div>
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function resizeGridItem(item){
+  grid = document.getElementById("grid");
+  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+}
+
+function resizeAllGridItems(){
+  allItems = document.getElementsByClassName("item");
+  for(x=0;x<allItems.length;x++){
+    resizeGridItem(allItems[x]);
+  }
+}
+
+function resizeInstance(instance){
+  item = instance.elements[0];
+  resizeGridItem(item);
+}
+
+window.onload = resizeAllGridItems();
+window.addEventListener("resize", resizeAllGridItems);
+
+allItems = document.getElementsByClassName("item");
+for(x=0;x<allItems.length;x++){
+  imagesLoaded( allItems[x], resizeInstance);
+}
+
+</script>
+</body>
+</html>
