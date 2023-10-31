@@ -6,9 +6,13 @@
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 	<title>TABLUN</title>
 	<link id="page_favicon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAARNJREFUOE9VUwkOwzAIg/8/msoXpNNULRkYY7vdVVNVNY1ndY3OPHb3zNztc8kildQMu3HVwGOHPoLt6gGuZ7BGAK0OV7uyB1cvA6P+Rqang86OWQohA4bg5LW4Yehi/jWgEAD8Lvy0T6Zs3g9rQBgf46GIBnoMhqDcFzzcQyIK4BHfHNErEVcU6szr0TJZYU24wWcu/5Qz+mkIcHkAvCuh6YOI2iRLs96dljFe4Nk4Isb61ZaWqMeEPMIBJLk3F4wZwM+FlTW+O62bvCgn8QBoHZPv/xCvIFiU0MV4KEYE2G206PJcDSiyUrRSgIEZ64WLUr8gRWuq4gg4i9Zp38a7fpPmib8gSTslxuaTi14Kr6A9P+Ahywp1qRyaAAAAAElFTkSuQmCC" rel="icon" type="image/x-icon">
+
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;600&family=Roboto&display=swap" rel="stylesheet">
+
+
 	<style type="text/css">
 
 
@@ -48,8 +52,9 @@
 	  *{
 		margin: 0;
 		padding: 0;
-		font-size: 14px;
-		font-family: 'Oswald', sans-serif;
+		font-size: 13px;
+		font-family: sans-serif;
+		cursor: default !important;
 		}
 
 		body{
@@ -79,7 +84,7 @@
 
 						#header_4t{
 									position: absolute;
-									font-size: 22px;
+									font-size: 20px;
 									font-family: 'Oswald', sans-serif;
 									line-height: 26px;
 									width: 64px;
@@ -105,9 +110,9 @@
 
 						#tablun{
 								position: absolute;
-								font-size: 80px;
+								font-size: 74px;
 								font-family: 'Oswald', sans-serif;
-								margin: 38px 0 0 77px
+								margin: 44px 0 0 77px
 								}
 
 
@@ -142,6 +147,7 @@
 				position: absolute;
 				margin-top: 200px;
 				width: 303px;
+				font-size: 12px;
 				}
 
 
@@ -168,9 +174,10 @@
  }
 
 .title h3{
-  font-size: 18px;
   text-transform: uppercase;
-  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin-bottom: 6px;
 }
 
 /*.project .title{
@@ -196,14 +203,47 @@
 		float: left;
 		}
 
+/*.desc .subtitle{
+				text-transform: uppercase;
+				font-size: 16px;
+				margin-bottom: 4px;
+				}*/
+
 .desc p{
   margin-bottom: 10px;
 }
 
 
+.premiere{
+		text-align: center;
+		display: block;
+		font-size: 18px;
+		margin: 24px 0;
+		font-weight: bold;
+		text-transform: uppercase;
+		}
+
 
 .visibility_hidden{ visibility: hidden; }
 
+
+.button{
+		display: block;
+		text-decoration: none;
+		padding: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Oswald', sans-serif;
+		margin: 24px 0;
+		}
+		.button.white{
+					font-size: 24px;
+					}
+		.button.black{
+					background: #000;
+					color: #fff;
+					font-size: 18px;
+					}
 
 
 	</style>
@@ -231,1101 +271,205 @@
 
 
 						<p id="lema">
-						La Red Social de los Autores que Nadie Lee.
+						La red social de los escritores que nadie lee.
 						<br>
-						Cuatro-Tablas &copy; 2023.
+						<br>
+						<b>Cuatro-Tablas © 2023</b> Centro Cultural.
+						<br>
+						Horario Lunes a Viernes 3:30 p.m. - 7:30 p.m. <br>Tel: 3138901202 Cra 10 No. 8-47, 2° Piso, Garzón H.
 						</p>
 						</div>
 						</div>
 
 
 <div id="grid" class="visibility_hidden">
+
+
+
+<!--
+
+	item obra
+	item event
+	item project
+	item opinion
+
+
+  <div class="item event">
+	<div class="content">
+	  <div class="title">
+		<h3>title</h3>
+	  </div>
+	  <div class="desc">
+		<p>text</p>
+	  </div>
+	</div>
+  </div>
+
+  <div class="item obra">
+	<div class="content">
+	  <div class="title">
+		<h3>obra</h3>
+	  </div>
+	  <img class="photothumb" src="url">
+	  <div class="desc">
+		<p>text</p>
+	  </div>
+	</div>
+  </div>
+
+-->
+
+
+
+  <div class="item opinion">
+	<div class="content">
+	  <div class="title">
+		<h3>FOCUSARTE</h3>
+	  </div>
+	  <img class="photothumb" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2151017076/settings_images/SbwpVWQTnWomgjHK8UOR_PORTADA-CURSO-ARTE-reduc_compressed.jpg">
+	  <div class="desc">
+		<p>
+			<br>
+			Aprende La historia del Arte Clásico de <b>Ter</b>,<br>
+			<!-- el Espectacular Curso te mostrará el Arte de manera Pro, -->
+			ahora en el Centro Cultural <b>Cuatro-tablas</b>.
+
+			<span class="button white">Noviembre 21</span>
+
+			Entiende el lenguaje de los grandes artistas como Leonardo da Vinci, Van Gogh, Frida Kahlo y Picasso.
+			<br><br>
+			Descubre los códigos y significados de obras como la Mona Lisa, Las Meninas y el Guernica.
+			<br><br>
+			Usamos las últimas tecnologías para que veas el arte como nunca lo has visto. 
+			<br>
+			<br>
+			<br>
+			<center>
+			Entrada Gratis, Cupos Limitados.<br>Aparta tu cupo, déjanos tu nombre al siguiente Whatsapp: 3138901202.
+			</center>
+			<br>
+			<a href="https://www.youtube.com/watch?v=OjFX_pCZlCw" target="blank" class="button black">Saber más.</a>
+			<br><br>
 			
 
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+
+		</p>
 	  </div>
 	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://kinsta.com/wp-content/uploads/2021/10/zero-to-one-book.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
 	</div>
-  </div>
+
+
+
+
   <div class="item project">
 	<div class="content">
 	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
+		<h3>renace el teatro alcázar</h3>
 	  </div>
 	  <div class="desc">
 		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+		<p>
+		Hemos de resaltar en esta oportunidad, la forma como un ciudadano dedicado a recoger las huellas de un pasado cultural y por qué no, comercial del Municipio de Garzón, ha logrado dedicarle su patrimonio económico a la recuperación de unas instalaciones que estaban condenadas al olvido y a la ruina, como en su momento se ha reconocido en toda la región, al edificio llamado Teatro <b>ALCÁZAR</b>, en Garzón Huila.  
+		<br>
+		<br>
+		Muchos recuerdos y evocación de nuestra adolescencia se nos vienen a la cabeza de este recinto, donde se realizaron muchos espectáculos culturales y sociales de gran trascendencia, entre los que recuerdo las graduaciones de estudiantes en los principales colegios de aquellos tiempos y la presentación de conciertos, como el de Pablus Gallinazo en su momento y de grandes proyecciones cinematográficas, del cine universal, sobre todo cuando la administración estuvo bajo el liderazgo de un hombre noble y un ciudadano ejemplar como lo fue y lo sigue siendo en nuestra memoria el señor Samuel Polanía Suárez, en compañía de su esposa y los hijos que amaron el cine y nuestro terruño.
+		<br>
+		<br>
+		Hoy es interesante reencontrarnos con su fachada, el Teatro <b>ALCÁZAR</b>, ha vuelto a encontrar las paredes frontales de su edificación en el granito original que lo embellecía y que algunos desalmados le dieron una mano de pintura en tal forma que cercenó su elegancia, la cual de nuevo brilla en el horizonte. Poco a poco, esta edificación resurge, renace y se proyecta como un punto cultural, a decir de su gestor <b>Fernando Ramírez Cuéllar</b>, quién convencido de su importancia, ha logrado “tapar por ahora las goteras de una cubierta que con una gran inversión, deberá hacer muy pronto, para cambiarla totalmente”, mientras alguna parte de la silletería de la nave central cobra vida y se transforma de las ruinas a la atracción de sus visitantes. 
+		<br>
+		<br>
+		Es interesante recordar que en una audiencia especial que se hizo en esta población, quien ejercía la presidencia de los colombianos, cuando se le puso de presente la necesidad de rescatar el Teatro <b>ALCÁZAR</b>, como patrimonio cultural de nuestro municipio, en un acto de barbarie administrativa, se limitó con la aquiescencia de su senador amigo, a ofrecer la adecuación del auditorio de una Institución Educativa, para que funcionara un TEATRO para la comunidad garzoneña, olvidando que ese auditorio y esas inversiones, solo han sido conocidas y usufructuadas, si se hicieron, por los estudiantes de esa institución, ya que nunca ha estado funcionando como lo propuso ese pasajero que se recuerda como un personaje más de la historia colombiana. 
+		<br>
+		<br>
+		Nuestro lema de hoy, con el renacer de las instalaciones del Teatro <b>ALCÁZAR</b>, es interesante para llamar la atención en una sociedad en la que la CULTURA, con letras mayúsculas, no se entrega a la comunidad, se oculta y se maquilla muy fácilmente por la ausencia de una educación convencional direccionada al espíritu y fortalecida por las redes sociales, la chismografía, el sensacionalismo amarillista de los medios de comunicación, sobre todo, por lo efímero y pasajero de las modas y de los reinados que se patrocinan desde el ente gubernamental, y los mismos establecimientos educativos. 
+		<br>
+		<br>
+		Es tal el desconocimiento del contenido de la cultura, que entre las propuestas de los candidatos a la administración municipal de Garzón, ahora en campaña electoral, solo hay silencio y se tergiversa la llamada cultura ciudadana, como la cultura que es el epicentro espiritual, social y mágico de la creación del ser humano en su proyección para su realización, sin desconocer una propuesta que sin contenido se plantea de crear una Corporación para el manejo de la cultura, que de seguro debe ser, con ánimo de lucro, para que organice las formas de corrupción que todos conocemos en nuestro medio. 
+		<br>
+		<br>
+		Aliento y mucha fortaleza para <b>Fernando Ramírez Cuellar</b> en este proyecto, el cual valoramos con mucho entusiasmo y esperamos contribuir con su crecimiento y apoyo, que demando en estos momentos de todo el centro del Departamento del Huila, de sus habitantes y de los sectores educativos, por el regreso a lo nuestro. <br>
+		<br>
+		<br>
+		<b>Amadeo Gozález Triviño</b>
+
+		</p>
 	  </div>
 	</div>
   </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
   <div class="item project">
 	<div class="content">
 	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
+		<h3>ESTIMADOS AMIGOS</h3>
 	  </div>
 	  <div class="desc">
 		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+		<p>
+		Hemos conocido que ante la Biblioteca Municipal de Garzón, personas interesadas en conocer a los escritores y artistas garzoneños, al indagar sobre ellos y buscar algún libro publicado la respuesta de la bibliotecaria ha sido en todo momento implacable para afirmar que en Garzón no hay escritores, y que por tanto no hay información al respecto.
+		<br>
+		<br>
+		Como quiera que tengo la sensación de que no está debidamente informada y que los medios sociales son una fuente de enriquecimiento que puede ayudar a sanear estas debilidades de la falta de cultura o desconocimiento del medio social, solicito se me haga llegar los nombres de las personas que ejercen ese noble ministerio de ser escritores y que mencionemos algunas de sus obras, con el fin de realizar un ensayo sobre la presencia de las letras en nuestra población y difundirla para que alguien la haga llegar a la Biblioteca Municipal.
+		<br>
+		Gracias por su Colaboración.
+		<br>
+		<br>
+		<br>
+		<b>Amadeo Gozález Triviño</b>
+		</p>
 	  </div>
 	</div>
   </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
+
+
+
+
+
+
+
+
+
+
   <div class="item project">
 	<div class="content">
 	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
+		<h3>ALEGORIA A LA PALABRA</h3>
 	  </div>
 	  <div class="desc">
 		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+		<p>
+		Leyendo un texto sobre el presente, el acaso y el destino, se me vinieron a la mente muchas de nuestras apreciaciones que a lo largo del discurrir de la poesía o la literatura que vamos tratando de construir con nuestras propias palabras, han hecho referencias a la vez “al tiempo” y a los elementos circunstanciales que nos entrelazan a la existencia y a los demás. 
+		<br><br>
+		Y es que “el tiempo” no es más que esa ficción que todos hemos aceptado sobre nuestro tránsito, nuestro devenir y nuestro propio proyecto de ser o de convalidar nuestra existencia. Esta ficción se va nutriendo entonces de elementos que, a decir de un maestro de la literatura, podrían ser mágicos y de un momento a otro, ofrecernos otras perspectivas, otros caminos, otras interpretaciones. 
+		<br><br>
+		Estoy aquí en este procesador buscando hilvanar palabras, buscando concretar ideas y bien pudiera estar en la calle, recorriendo los espacios invisibles del alma, dejándome atrapar de las miradas que se ocultan tras los grandes ventanales que un día existieron y que hoy son anaqueles donde se guardan las esperanzas de un mundo comercializado e insensible que no volveremos a ver: la ciudad del ayer, la ciudad que se derritió cuando los moles de concreto invadieron todo, todo, hasta la casa que habito. 
+		<br><br>
+		También podría dejarme atrapar de las palabras para combinarlas con el gorjeo de las aves de un parque transformado en ruinas, y donde los vehículos que transitan nos van absorbiendo de qué manera, que no escuchamos el trinar de las aves o de los pajarillos que otrora se asentaban sobre el viejo samán de la esquina del parque, ya vetusto y abandonado, ya colmado de pasacalles de polítiqueros en ascuas que lo invaden todo, todo o de avisos de venta de chucherías de quienes nunca pensaron en que la vida es así de banal de intrascendente e insípida como sus propios proyectos o sueños de poder, que la vida es como la muerte misma que corre lenta y presurosa a la vez. 
+		<br><br>
+		Busco entonces un texto, un libro, evoco en mi memoria esos momentos en los que un sueño fue anunciado con bombos y platillos, con la garantía de que al anunciarlo no se haría realidad, y en efecto, todo fue parte de un encantamiento que me llevó a transformar un día, ésta versatilidad de la palabra por la agilidad de la escritura, para tratar de no dejar escapar una idea, de concretar una esperanza o de ver florecer una amargura en medio de la soledad, del silencio y del deseo. 
+		<br><br>
+		Eso somos, etéreos, vagos e imprecisos, pero con grandes y múltiples proyecciones en los que la vida y el tiempo, no son suficientes para dejar nuestra perfecta imagen de lo que somos, un día, quizá vamos a entender que todo se ha transformado, que todo ha sido trastocado de lo que en realidad somos o creíamos ser, pero como navegantes o soñadores evocamos a cada instante aquellos ideales para dejar escapar un suspiro o quizá un anhelo roto. 
+		<br><br>
+		Nosotros no somos los mismos, nosotros hemos entendido que la vida y el destino de los otros, hacen parte de nuestro propio quehacer, de nuestra propia vitalidad y que sin el otro, sin los otros, todo sería un espejo invisible de la nada, como esa forma amorfa de las cosas, entendamos o no entendamos esta reflexión y este acontecer, es parte de esa locura que muchas veces queremos transmitir de uno u otro modo, con una palabra, con un símbolo, o con una apreciación para con el lector, aquel que espera o encuentra una frase, un párrafo o un capítulo que lo conmueva o que lo concite a buscar en otro espacio, en otro texto, otra palabra que lo motive a seguir leyendo, a seguir construyendo su propia idealidad, sin dejar de reconocer que sin la lectura no seremos quienes hemos sido, quienes podemos ser, quienes queremos ser. 
+		<br><br>
+		Leamos o no, la vida es la misma y el destino y la muerte, siempre serán lo mismo: un punto de partida que regresa al lugar de origen, a la nada.
+		<br>
+		<br>
+		<br>
+		<b>Amadeo Gozález Triviño</b>
+		</p>
 	  </div>
 	</div>
   </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-	<div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="382543410_700181314878684_3901786500806989916_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item event">
-	<div class="content">
-	  <div class="title">
-		<h3>event</h3>
-	  </div>
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog9.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://assets.codepen.io/881020/dog10.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog1.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item obra">
-	<div class="content">
-	  <div class="title">
-		<h3>obra</h3>
-	  </div>
-	  <img class="photothumb" src="https://assets.codepen.io/881020/dog2.jpg">
-	  <div class="desc">
-		<p>Lorem ipsum dolor sit amet, conse</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="56065944_2166732166738698_4658177729441562624_n.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-	  </div>
-	</div>
-  </div>
-  <div class="item project">
-	<div class="content">
-	  <div class="title">
-		<h3>opinión</h3>
-	  </div>
-	  <div class="desc">
-		<img src="https://www.lacoladerata.co/wp-content/uploads/2020/11/amadeo-gonzalez-trivino.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-	  </div>
-	</div>
-  </div>
-
-
-		</div>
 
 
 
@@ -1337,14 +481,7 @@
 
 
 
-
-
-
-
-
-
-
-
+</div>
 
 <script type="text/javascript">
 
